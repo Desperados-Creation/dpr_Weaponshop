@@ -21,7 +21,6 @@ AddEventHandler('dpr_Weaponshop:AchatArme', function(Label, Weapon, Price)
 			TriggerClientEvent('esx:showAdvancedNotification', _src, 'Ammunation', 'Armurier', 'Merci pour ton achat !', 'CHAR_AMMUNATION', 1)
 			Citizen.Wait(10000)
 			TriggerClientEvent('esx:showAdvancedNotification', _src, 'Banque', 'Conseiller', "Un prélèvement de ~r~"..Price.." ~s~a été effectué sur votre compte pour ~o~"..Label.." ~s~!", 'CHAR_BANK_MAZE', 1)
-			end
 		else
 			Citizen.Wait(500)
 			TriggerClientEvent('esx:showAdvancedNotification', _src, 'Ammunation', 'Armurier', 'Tu en as déjà un sur toi !', 'CHAR_AMMUNATION', 1)
